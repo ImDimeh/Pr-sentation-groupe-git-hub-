@@ -6,8 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pres Lynda Benabdessadok </title>
 </head>
+<header>
 
+</header>
 <body>
-    
+    <div class="container">
+        <ul class="scroller">333
+            <li>Dolorum, odit quasi?</li>
+            <li>Laborum, possimus exercitationem.</li>
+            <li>Alias, sapiente molestias.</li>
+            <li>Iusto, cupiditate non.</li>
+            <li>Hic, commodi dicta!</li>
+            <li>Atque, voluptatum repellendus!</li>
+            <li>Est, maiores perferendis!</li>
+            <li>Nesciunt, hic error.</li>
+          </ul>
+    </div>
 </body>
+<script>
+    const gra = function(min, max) {
+    return Math.random() * (max - min) + min;
+}
+
+const gri = function(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+const init = function(){
+  let items = document.querySelectorAll('li');
+  for (let i = 0; i < items.length; i++){
+    items[i].style.minHeight = gra(20,30) + 'vh';
+    items[i].style.background = randomColor({luminosity: 'light'});
+  }
+  
+  cssScrollSnapPolyfill()
+}
+init();
+</script>
 </html>
