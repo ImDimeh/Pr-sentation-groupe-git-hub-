@@ -5,48 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pres Lynda Benabdessadok </title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <header>
 
 </header>
 <body>
-    <div class="container">
-        <ul class="scroller">333
-            <li>Presentation
-                <h1>
-                    Hi everyone,I'am lynda.Currently a second year bacghelor student
-                    at IIM digital school , I aspire to orientate myself towards numerical jobs that mostly
-                    evolve frequently or come to birth and are known as new jobs.
-                    Therefor I tend to learn a lot about web development and all the wereabouts related to it.
-                </h1>
-            </li>
-            <li>Passion</li>
-            <li>Projet</li>
-            <li>Traits</li>
-        </ul>
-    </div>
+    <section>
+        <h1>Presentation</h1>
+        <p>
+            Hi everyone,I'am lynda.Currently a second year bacghelor student
+            at IIM digital school , I aspire to orientate myself towards numerical jobs that mostly
+            evolve frequently or come to birth and are known as new jobs.
+            Therefor I tend to learn a lot about web development and all the wereabouts related to it.
+        </p>
+      </section>
+      <section>
+          <h2>passions</h2>
+          <p>
+
+          </p>
+      </section>
+      <section>
+          <h4>projects</h4>
+          <p>
+
+          </p>
+      </section>
+      <section>
+          <h3>traits</h3>
+          <p>
+
+          </p>
+      </section>
 </body>
-
-
-
 <script>
     const gra = function(min, max) {
     return Math.random() * (max - min) + min;
 }
-
-const gri = function(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
 const init = function(){
-  let items = document.querySelectorAll('li');
+  let items = document.querySelectorAll('section');
   for (let i = 0; i < items.length; i++){
-    items[i].style.minHeight = gra(20,30) + 'vh';
     items[i].style.background = randomColor({luminosity: 'light'});
   }
-  
   cssScrollSnapPolyfill()
 }
 init();
 </script>
+
 </html>

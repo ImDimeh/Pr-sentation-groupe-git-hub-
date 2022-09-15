@@ -1,25 +1,60 @@
 * {
     box-sizing: border-box;
   }
-  body {
+  
+  html {
     font-family: sans-serif;
-  }
-  .container {
-    max-height: 100vh;
-    overflow-y: scroll;
-    border: 1px solid gray;
     scroll-snap-type: mandatory;
-    scroll-snap-points-y: repeat(3rem);
+    scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y mandatory;
   }
-  li {
-    border-bottom: 1px solid rgb(134, 85, 85);
-    padding: 1rem;
-    font-size: 1.2rem;
-    color: rgb(71, 151, 191);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  
+  section {
+    border-bottom: 1px solid rgb(24, 89, 169);
+    padding: 4rem;
+    height: 100vh;
     scroll-snap-align: start;
+    text-align: center;
+    position: relative;
+  }
+  
+  h1 {
+    position: absolute;
+    top: 5%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: rgb(276, 208, 211);
+    width: 100%;
+    left: 0;
+    font-size: calc(1rem + 3vw);
+  }
+  h2 {
+    position: absolute;
+    top: 5%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: rgb(23, 86, 118);
+    width: 100%;
+    left: 0;
+    font-size: calc(1rem + 3vw);
+  }
+  h3 {
+    position: absolute;
+    top: 5%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: rgb(176, 208, 211);
+    width: 100%;
+    left: 0;
+    font-size: calc(1rem + 3vw);
+  }
+  h4 {
+    position: absolute;
+    top: 5%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: rgb(44, 110, 73);
+    width: 100%;
+    left: 0;
+    font-size: calc(1rem + 3vw);
   }
