@@ -18,14 +18,26 @@
   --dark-spring-green: hsla(146, 43%, 30%, 1);
 
   background-color: var(--blue-sapphire);
-  color: var(--light-blue);
 }
 
 .Section {
   height: 80vh;
   text-align: center;
-  border-top: var(--dark-spring-green) 10px solid;
 }
 .S1 {
   margin-top: 20vh;
+  background-color: var(--light-blue);
+}
+.S1 img {
+  border-radius: 50%;
+  margin: 20px;
+
+  width: 175px;
+
+  display: block;
+
+  margin-right: auto;
+}
+h1 {
+  background-color: var(--dark-spring-green);
 }
