@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    background-color: rgb(255, 149, 140);
+}
+html {
+    font-family: sans-serif;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+}
+section {
+    border-bottom: 1px solid rgb(255, 4, 4);
+    padding: 1rem;
+    height: 100vh;
+    scroll-snap-align: start;
+    text-align: center;
+    position: relative;
+}
+h1 {
+    
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: rgb(21, 213, 79);
+    width: 100%;
+    left: 0;
+    font-size: calc(1rem + 3vw);
+}
+
+.part1{
+    background-color: rgb(255, 149, 140);
+}
+
+.part2{
+ background-color: rgb(255, 149, 140);
+ }
+
+ .part3{
+    background-color: rgb(255, 149, 140);
+}
