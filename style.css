@@ -98,13 +98,10 @@ p{
 
 /** RESPONSIVE **/
 
-@media screen and (max-width: 900px) { 
-    .p-resume{
-        font-size: 10px;
-    }
-
-    .resume{
-        width: auto;
+@media screen and (min-width: 300px) (max-width: 900px) { 
+    body{
+        display:flex;
+        flex-direction : column;
     }
  }
 
