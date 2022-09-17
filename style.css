@@ -90,9 +90,6 @@ p {
   color: var(--blue-sapphire);
   
 }
-.S3 {
-  background-color: red;
-}
 
 
 /* part 2 */
@@ -129,12 +126,12 @@ p {
   animation: fadein .8s;
 }
 @keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
 }
 .panel-title{
   font-size:1.5em;
@@ -155,3 +152,40 @@ p {
   color:#000;
   border-top: 3px solid #000;
 }
+
+/*   Section 3 */
+  .S3 {
+    background-color: var(--dark-sienna);
+    color: var(--blue-sapphire);
+    height: 150vh;
+    
+  }
+  .S3 p {
+    text-align: center;
+    margin-top: 50px;
+
+  }
+  .wrapper {
+    max-width: 1300px;
+    width: 80%;
+    height: auto;
+    margin: 100px auto;
+     border: 1px solid #333; 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: center;
+    grid-gap: 100px;
+   
+  }
+  .image {
+    width: 250px;
+    height: 165px;
+
+  }
+  @media (max-width : 800px ) {
+    .S3 {
+      height: 300vh;
+    }
+  }
+    
+ 
