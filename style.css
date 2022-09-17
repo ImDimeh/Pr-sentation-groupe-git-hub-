@@ -79,7 +79,7 @@ header {
     width: 100%;
 }
 .menu li a:hover {
-    color: #000;
+    color: rgba(35, 9, 3, 0.2);
 }
 
 /* presentation CSS */
@@ -129,14 +129,14 @@ header {
     100%{opacity: 1;}
 }
 
-/* menu CSS */
+/* passion CSS */
 
 #passions {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: rgba(0,0,0,0.05);
+    background-color: rgba(35, 9, 3, 0.2);
     padding: 50px 10px;
 }
 .mini_title {
@@ -152,16 +152,16 @@ header {
     margin-bottom: 25px;
     text-align: center;
 }
-.dishes {
+.passionate {
     display: flex;
     flex-wrap: wrap;
     width: 80%;
     justify-content: space-around;
 }
-.dishes .dish {
+.passionate .passion {
     height: 280px;
     width: 30%;
-    background-color: #fff;
+    background-color: rgba(176 208 211 /0.9);
     padding: 25px;
     display: flex;
     align-items: center;
@@ -173,24 +173,16 @@ header {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 
 }
-.dishes .dish  img {
+.passionate .passion  img {
     width: 130px;
     height: 120px;
+    border-radius: 10%;
     margin-bottom: 15px;
 }
-.dishes .dish p {
+.passionate .passion p {
     text-align: center;
     font-size: 18px;
 
-}
-.dishes .dish a {
-    margin-top: 10px;
-    font-size: 14px;
-    text-decoration: 0;
-    background-color: rgba( 44 110 73 );
-    padding: 5px 60px;
-    color: #fff;
-    border-radius: 6px;
 }
 /*Scrollbar CSS*/
 ::-webkit-scrollbar {
@@ -200,7 +192,7 @@ header {
     background-color: rgba( 44 110 73 );
 }
 
-/* about us CSS */
+/* about me *My school and the tools I use* CSS */
 
 #competences {
     display: flex;
@@ -235,13 +227,10 @@ header {
     color: #273e60;
     margin: 10px 0;
 }
-.about .right p {
-    font-size: 14px ;
-    color: #999;
-}
 
 
-/* comment section CSS */
+
+/* traits section CSS */
 
 .traits_section {
     display: flex;
@@ -263,15 +252,9 @@ header {
    align-items: center;
    margin-bottom: 10px;
 }
-.joining  .join div img {
-   width: 45px;
-   height: 45px;
-   border: 2px solid #27ae60;
-   border-radius: 50%;
-}
 .joining  .join {
     width: 30%;
-    border: 1px solid #ccc;
+    border: 1px solid rgba(35, 9, 3, 0.7);
     border-radius: 6px;
     padding: 20px;
 }
@@ -284,30 +267,6 @@ header {
     font-size: 13px;
     color: #999;
 }
-
-.service img {
-    width: 40px;
-    background-color: #27ae60;
-    padding: 10px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-
-}
-.service {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 25px auto;
-}
-
-hr {
-    background-color: #ccc;
-    border: 0;
-    height: 2px;
-    width: 100%;
-}
-
 .toggle_menu {
     display: none;
 }
@@ -319,63 +278,57 @@ hr {
     header {
         padding: 0 20px;
     }
-    #home {
+    #presentation {
         flex-direction: column;
         padding: 12px;
         height: fit-content;
 
     }
-    #home .left , #home .right  {
+    #presentation .left , #presentation .right  {
         width: 100%;
         padding: 0;
     }
-    #home .left {
+    #presentation .left {
         margin: 100px 0;
     }
-    #home .left h1 {
+    #presentation .left h1 {
         font-size: 20px;
         margin-bottom: 15px;
     }
-    #home .left h4 {
+    #presentation .left p {
         font-size: 15px;
     }
-    #home .left p {
-        font-size: 15px;
-    }
-    #menu .dishes .dish {
+    #passions .passionate .passion {
         width: 100%;
         max-width: 260px;
     }
-    #about_us {
+    #competences {
         padding: 10px ;
         height: auto;
     }
-    #about_us .about {
+    #competences .about {
         flex-direction: column;
        height: fit-content;
     }
-    #about_us .left , #about_us .right {
+    #competences .left , #competences .right {
         width: 100%;
     }
-    #about_us .left {
+    #competences .left {
         height: fit-content;
     }
-    #about_us .left img {
+    #competences .left img {
         width: 50%;
     }
-    #about_us .right {
+    #competences .right {
         text-align: center;
         padding: 20px;
     }
-    .comment_section {
+    .traits_section {
         height: auto;
     }
-    .comment_section .comments  .comment{
+    .traits_section .joining  .join{
         width: 100%;
         margin-top: 20px;
-    }
-    .services_list .service {
-        padding: 0 50px;
     }
     .toggle_menu {
         display: flex;
@@ -392,22 +345,22 @@ hr {
         content: "";
         height: 3px;
         width: 28px;
-        background-color: #27ae60;
+        background-color: rgba( 44 110 73 );
         border-radius: 6px;
-        box-shadow: 0 10px 0 #27ae60;
+        box-shadow: 0 10px 0 rgba( 44 110 73 );
         transform: translateY(-10px);
         transition: 0.5s;
     }
     .toggle_menu.active::before {
         transform: translateY(0) rotate(135deg);
-        box-shadow: 0 0 0 #27ae60
+        box-shadow: 0 0 0 rgba( 44 110 73 );
     }
     .toggle_menu::after {
         position: absolute;
         content: "";
         height: 3px;
         width: 28px;
-        background-color: #27ae60;
+        background-color: rgba( 44 110 73 );
         border-radius: 6px;
         transform: translateY(10px);
         transition: 0.5s;
