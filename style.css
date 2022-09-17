@@ -38,7 +38,8 @@ section {
 }
 .S1 {
   margin-top: 20vh;
-  background-color: var(--light-blue);
+  background-image: url(/image/iim.png);
+ background-size: cover;
 }
 .S1 img {
   border-radius: 50%;
@@ -52,8 +53,13 @@ section {
   margin-right: auto;
 }
 .S1 p {
+  color: white;
   font-size: 5vh;
   margin-top: 10%;
+  font-weight: bold;
+  background-color: hsla(11, 84%, 7%, 0.5);
+  
+
 }
 .Titre1 {
   background-color: var(--dark-spring-green);
