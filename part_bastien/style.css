@@ -27,8 +27,19 @@ h1 {
     font-size: calc(1rem + 3vw);
 }
 
+img {
+  width: 35%;
+  height: 35%;
+  
+}
 .part1{
     background-color: rgb(255, 149, 140);
+
+}
+
+.textp1 {
+  border:1px solid red;
+ padding:3px;
 }
 
 .part2{
