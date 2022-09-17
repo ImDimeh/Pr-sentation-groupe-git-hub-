@@ -109,6 +109,22 @@ p{
         flex-direction: column;
     }
 
+    
+    #box3{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #box4{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #box5{
+        display: flex;
+        flex-direction: column;
+    }
+
    
  }
 
