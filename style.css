@@ -42,12 +42,17 @@ html {
 .S1 img {
   border-radius: 50%;
   margin: 20px;
-
+  margin-left: auto;
+  margin-right: auto;
   width: 175px;
 
   display: block;
 
   margin-right: auto;
+}
+.S1 p {
+  font-size: 5vh;
+  margin-top: 10%;
 }
 .Titre1 {
   background-color: var(--dark-spring-green);
@@ -58,4 +63,8 @@ html {
 }
 .S2 {
   background-color: var(--dark-spring-green);
+}
+.ico1 {
+  height: 300px;
+  width: 30px;
 }
