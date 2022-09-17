@@ -26,19 +26,19 @@ header {
     left: 0;
     right: 0;
     background-color: rgba(176 208 211 /0.9);
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    box-shadow: 0 0 10px rgba(35, 9, 3, 0.2);
     z-index: 10;
 }
 .menu {
     display: flex;
 }
 .logo {
-    color: #27ae60;
+    color: rgba( 44 110 73 );
     font-weight: 700;
     font-size: 25px;
 }
 .logo span {
-    color: #273e60;
+    color: rgba( 23 86 118 );
 }
 .menu li {
    margin: 0 15px;
@@ -47,7 +47,7 @@ header {
 .menu li a {
     font-size: 14px;
     text-decoration: 0;
-    color: #999;
+    color: rgba( 255 149 140 );
     position: relative;
 }
 .menu li a::before {
@@ -58,7 +58,7 @@ header {
     width: 0;
     height: 2px;
     border-radius: 6px;
-    background-color: #27ae60;
+    background-color: rgba( 44 110 73 );
     transition: 0.5s;
 }
 .menu li a:hover::before {
@@ -72,7 +72,7 @@ header {
     width: 0;
     height: 2px;
     border-radius: 6px;
-    background-color: #27ae60;
+    background-color: rgba( 44 110 73 );
     transition: 0.5s;
 }
 .menu li a:hover::after {
@@ -82,8 +82,8 @@ header {
     color: #000;
 }
 
-/* home CSS */
-#home {
+/* presentation CSS */
+#presentation {
     margin-top: 50px;
     display: flex;
     align-items: center;
@@ -92,66 +92,34 @@ header {
     height: calc(100vh - 50px);
     justify-content: space-between;
 }
-#home .left {
-    width: 40%;
+#presentation .left {
+    width: 60%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-#home .left h4 {
-    font-size: 20px;
-    color: #27ae60;
-}
-#home .left h1 {
+
+#presentation .left h1 {
+    color: rgba( 23 86 118 );;
     font-size: 40px;
 }
-#home .left p {
+#presentation .left p {
     font-size: 12px;
     color: #999;
 }
-#home .left button {
-     margin-top: 20px;
-     width: fit-content;
-     padding: 5px 10px;
-     background-color: #000;
-     border: 0;
-     transition: 0.5s;
-     position: relative;
-     cursor: pointer;
-}
-#home .left button  a {
-    text-decoration: 0;
-    color: #fff;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: 0.5s;
-}
-#home .left button::before {
-    position: absolute;
-    left: 5px;
-    top: 5px;
-    content: "";
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    background-color: #27ae60;
-}
-#home .left button:hover a{
-   letter-spacing: 1px;
-}
 
-#home .right {
+#presentation .right {
     width: 50%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#home .right img {
+#presentation .right img {
     width: 100%;
-    animation: animate 2s linear;
-    transition: 0.5s;
+    animation: animate 3s linear;
+    transition: 0.7s;
 }
 
 /* animation image */
@@ -163,7 +131,7 @@ header {
 
 /* menu CSS */
 
-#menu {
+#passions {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -172,9 +140,9 @@ header {
     padding: 50px 10px;
 }
 .mini_title {
-    margin-top: 25px;
-    font-size: 16px;
-    color: #27ae60;
+    margin-top: 20px;
+    font-size: 25px;
+    color: rgba( 44 110 73 );
     text-transform: capitalize;
 }
 .title {
