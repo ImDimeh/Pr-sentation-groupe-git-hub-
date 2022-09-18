@@ -1,10 +1,11 @@
 * {
     box-sizing: border-box; 
+    font-family: 'Raleway', sans-serif;
 }
 html {
     scroll-snap-type: mandatory;
     scroll-snap-type: y mandatory;
-    background-color: #A9BCD0;
+    background-color: rgb(255, 150, 140);
 }
 section {
     border-bottom: 2px solid #725D68;
@@ -28,17 +29,20 @@ img {
 
 
 .part1{
-    background-color: rgba(255, 150, 140, 0.462);
-
+  background-color: rgba(243, 223, 221, 0.791);
 }
 
+ 
+
+
 .textp1 {
-  border:1px solid #725D68 ;
  padding:3px;
+
 }
 
 .part2{
-  background-color: rgba(255, 150, 140, 0.462);
+  background-color: rgba(243, 223, 221, 0.791);
+
  
 }
 .imgp2
@@ -49,7 +53,8 @@ width: 30%;
   height: 40%;
 }
  .part3{
-  background-color: rgba(255, 150, 140, 0.462);
+  background-color: rgba(243, 223, 221, 0.791);
+
     
 }
 
