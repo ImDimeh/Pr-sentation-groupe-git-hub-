@@ -207,8 +207,8 @@ section {
 }
 .S2  {
   color: var(--blue-sapphire);
-  height: 100vh;
-  
+  height: 150vh;
+ 
 }
 .S2 ul {
   color: var(--blue-sapphire)
@@ -284,12 +284,13 @@ p {
   .S3 {
     background-color: var(--dark-sienna);
     color: var(--blue-sapphire);
-    height: 150vh;
+    height: 200vh;
     
   }
   .S3 p {
     text-align: center;
     margin-top: 50px;
+    
 
   }
   .wrapper {
@@ -297,16 +298,22 @@ p {
     width: 80%;
     height: auto;
     margin: 100px auto;
-     border: 1px solid #333; 
+    
     display: grid;
     grid-template-columns: repeat(auto-fill, 300px);
     justify-content: center;
     grid-gap: 100px;
+    
+    
+
+    
+
    
   }
   .image {
     width: 250px;
     height: 165px;
+   
 
   }
   @media (max-width : 800px ) {
