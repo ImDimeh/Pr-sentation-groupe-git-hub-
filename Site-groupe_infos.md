@@ -16,7 +16,11 @@ You will then get to discover some traits about us in every single page as well 
 
 #check our profiles as well please#
 
-https://github.com/bastienR17
+<br>
+https://github.com/Sarayeo
+<br>
+https://github.com/bastienR17 
+<br>
 https://github.com/Lyn1603
 
 
