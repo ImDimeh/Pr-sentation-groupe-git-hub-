@@ -1,0 +1,161 @@
+/**CSS GENERAL**/
+
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1{
+    font-family: arial black;
+    font-size: 50px;
+    color:white;
+    margin: 0px;
+    padding: 50px;   
+}
+
+h2{
+    font-family: arial black;
+    font-size: 30px;
+    color:white;
+    padding: 50px;    
+}
+
+h3{
+    font-family: arial black;
+    font-size: 30px;
+    color:white;
+    padding: 50px;    
+}
+
+
+
+
+/* Keyframes pour le background */
+@keyframes change-background {
+    0% {
+      background: blue;
+    }
+    50% {
+      background: orange;
+    }
+    100% {
+      background: green;
+    }
+  }
+
+
+
+p{ 
+    font-family: arial black;
+    color: white;
+    font-size: 20px;
+}
+
+
+/** CSS POUR LES DIVS (ET NON PAS LES DIVISIONS HAHAHAHAHAHAHAHAHA) ahem **/
+
+/** Box1 = Banner**/
+#box1{
+    height: 100vh;
+    width: 100%;
+    background-image: url(image/nouveau-campus-ilv-nanterre-grande-arche-paris-la-defense-92.jpg);
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
+
+/** Box2 = partie resume**/
+#box2{
+    height: 100vh;
+    width: 100%;
+    background-color: lightblue;
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
+
+/** Box3 = partie skills et passions**/
+#box3{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(163, 216, 190);
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
+
+
+
+/** Box4 = Partie Connect with me **/
+#box4{
+    height: 100vh;
+    width: 100%;
+    background-color:rgb(255, 185, 179);
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
+
+
+/** Box5 = footer**/
+
+#box5{
+    height: 100vh;
+    width: 100%;
+    background-image: url(image/nouveau-campus-ilv-nanterre-grande-arche-paris-la-defense-92.jpg);
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
+
+
+/** RESPONSIVE **/
+
+@media screen and (min-width: 500px) and (max-width: 900px) { 
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #box2{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+
+
+    #box3{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+
+    .logos{
+        width: auto;
+    }
+
+
+    #box4{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+    h1{
+        width: auto;
+
+    }
+   
+
+    .logos1{
+        width: auto;
+
+    }
+
+    
+
+   
+ }
+
+
+

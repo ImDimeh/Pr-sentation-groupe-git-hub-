@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+}
+/* Nav Bar */
+nav {
+    height: 70px;
+    background: rgba(176 208 211 /0.9);
+    box-shadow: 0 0 10px rgba(35, 9, 3, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    padding: 0 10%;
+    height: 70px;
+    background-color: rgba(176 208 211 /0.9);
+    z-index: 10;
+  }
+  nav svg {
+    display: none;
+  }
+  .logo h2 {
+    text-decoration: overline;
+    font-style: italic;
+    color: #273e60;
+    cursor: pointer;
+    margin: 0 0.5rem;
+  }
+  .nav-items {
+    display: flex;
+    justify-content: space-between;
+  }
+  .overview,
+  .account {
+    display: flex;
+  }
+  .overview {
+    margin-right: 4rem;
+  }
+  .nav-items h3 {
+    display: none;
+  }
+  nav li {
+    list-style: none;
+    margin: 0 0.5rem;
+  }
+  nav a {
+    text-decoration: none;
+    color: rgb(255, 149, 140);
+  }
+  nav a:hover {
+    color: #273e60;
+  }
+  nav a::after {
+    content: "";
+    display: block;
+    height: 3px;
+    background: #273e60;
+    width: 0%;
+    transition: all ease-in-out 300ms;
+  }
+  nav a:hover::after {
+    width: 100%;
+  }
+  #check,
+  .menu {
+    display: none;
+  }
+  
+section {
+    margin-top: 70px;
+}
+body {
+    position: relative;
+}
+html {
+    scroll-behavior: smooth;
+    font-size: 60%;
+}
+
+
+/* presentation CSS */
+#presentation {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: calc(100vh - 50px);
+    justify-content: space-between;
+}
+#presentation .left {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#presentation .left h1 {
+    color: rgba( 23 86 118 );
+    font-size: 40px;
+}
+#presentation .left p {
+    font-size: 12px;
+    color: #999;
+}
+
+#presentation .right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#presentation .right img {
+    width: 100%;
+    animation: animate 3s linear;
+    transition: 0.7s;
+}
+
+/* animation image */
+
+@keyframes animate {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+/* passion CSS */
+
+#passions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(35, 9, 3, 0.2);
+    padding: 50px 10px;
+}
+.mini_title {
+    margin-top: 20px;
+    font-size: 25px;
+    color: rgba( 44 110 73 );
+    text-transform: capitalize;
+}
+.title {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #273e60;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.passionate {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-around;
+}
+.passionate .passion {
+    height: 280px;
+    width: 30%;
+    background-color: rgba(176 208 211 /0.9);
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 6px;
+    margin-bottom: 35px;
+    transition: 0.5s;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+}
+.passionate .passion  img {
+    width: 130px;
+    height: 120px;
+    border-radius: 10%;
+    margin-bottom: 15px;
+}
+.passionate .passion p {
+    text-align: center;
+    font-size: 18px;
+
+}
+/*Scrollbar CSS*/
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba( 44 110 73 );
+}
+
+/* about me *My school and the tools I use* CSS */
+
+#competencies {
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 50px);
+    flex-direction: column;
+    padding: 50px 10%;
+    width: 100%;
+}
+.about {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    height: 70vh;
+}
+.about .left {
+     width: 40%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 100vh;
+}
+.about .left img {
+    width: 80%;
+}
+.about .right {
+    width: 50%;
+}
+.about .right h3 {
+    font-size:25px;
+    color: #273e60;
+    margin: 10px 0;
+}
+
+
+
+/* traits section CSS */
+
+.traits_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 50px);
+    flex-direction: column;
+    padding: 0 10%;
+}
+
+.joining {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.joining  .join div {
+   display: flex;
+   align-items: center;
+   margin-bottom: 10px;
+}
+.joining  .join {
+    width: 30%;
+    border: 1px solid rgba(35, 9, 3, 0.7);
+    border-radius: 6px;
+    padding: 20px;
+}
+.joining  .join div h4 {
+    margin-left: 15px;
+    font-size: 14px;
+    color: #273e60;
+}
+.joining .join p {
+    font-size: 13px;
+    color: #999;
+}
+.toggle_menu {
+    display: none;
+}
+/* Responsive */
+@media (max-width:964px) {
+    .nav-items {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 250px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background: rgba(176 208 211 /0.9);
+        padding: 2rem;
+        right: -250px;
+        transition: all ease-in-out 500ms;
+      }
+      .overview,
+      .account {
+        flex-direction: column;
+        width: auto;
+      }
+      .overview {
+        margin: 0;
+      }
+      .nav-items h3 {
+        display: inline-block;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 13px;
+        margin-bottom: 1rem;
+      }
+      nav svg {
+        display: inline-block;
+        cursor: pointer;
+        vertical-align: top;
+      }
+      nav li {
+        margin: 1rem 0;
+      }
+      nav a {
+        display: inline-block;
+      }
+      nav a:hover {
+        margin-left: 2px;
+        transition: all ease-in-out 300ms;
+      }
+      .menu {
+        display: inline-block;
+        position: fixed;
+        right: 2.5rem;
+        z-index: 99;
+      }
+      #check:checked ~ .nav-items {
+        right: 0;
+      }
+ 
+    #presentation {
+        flex-direction: column;
+        padding: 12px;
+        height: fit-content;
+
+    }
+    #presentation .left , #presentation .right  {
+        width: 100%;
+        padding: 0;
+    }
+    #presentation .left {
+        margin: 100px 0;
+    }
+    #presentation .left h1 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    #presentation .left p {
+        font-size: 15px;
+    }
+    #passions .passionate .passion {
+        width: 100%;
+        max-width: 260px;
+    }
+    #competencies {
+        padding: 10px ;
+        height: auto;
+    }
+    #competencies .about {
+        flex-direction: column;
+       height: fit-content;
+    }
+    #competencies .left , #competencies .right {
+        width: 100%;
+    }
+    #competencies .left {
+        height: fit-content;
+    }
+    #competencies .left img {
+        width: 50%;
+    }
+    #competencies .right {
+        text-align: center;
+        padding: 20px;
+    }
+    .traits_section {
+        height: auto;
+    }
+    .traits_section .joining  .join{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+}
+
+
+  
+  
+
+  
