@@ -8,14 +8,17 @@
 /* Nav Bar */
 nav {
     height: 70px;
-    background: rgb(20, 20, 20);
-    color: rgb(220, 220, 220);
-    padding: 0 2rem;
+    background: rgba(176 208 211 /0.9);
+    box-shadow: 0 0 10px rgba(35, 9, 3, 0.3);
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
+    padding: 0 10%;
+    height: 70px;
+    background-color: rgba(176 208 211 /0.9);
+    z-index: 10;
   }
   nav svg {
     display: none;
@@ -23,7 +26,7 @@ nav {
   .logo h2 {
     text-decoration: overline;
     font-style: italic;
-    color: rgb(0, 206, 206);
+    color: #273e60;
     cursor: pointer;
     margin: 0 0.5rem;
   }
@@ -47,16 +50,16 @@ nav {
   }
   nav a {
     text-decoration: none;
-    color: rgb(220, 220, 220);
+    color: rgb(255, 149, 140);
   }
   nav a:hover {
-    color: #a0ebfd;
+    color: #273e60;
   }
   nav a::after {
     content: "";
     display: block;
     height: 3px;
-    background: #a0ebfd;
+    background: #273e60;
     width: 0%;
     transition: all ease-in-out 300ms;
   }
@@ -99,7 +102,7 @@ html {
 }
 
 #presentation .left h1 {
-    color: rgba( 23 86 118 );;
+    color: rgba( 23 86 118 );
     font-size: 40px;
 }
 #presentation .left p {
@@ -192,7 +195,7 @@ html {
 
 /* about me *My school and the tools I use* CSS */
 
-#competences {
+#competencies {
     display: flex;
     align-items: center;
     height: calc(100vh - 50px);
@@ -278,7 +281,7 @@ html {
         width: 250px;
         flex-direction: column;
         justify-content: space-evenly;
-        background: rgb(20, 20, 20);
+        background: rgba(176 208 211 /0.9);
         padding: 2rem;
         right: -250px;
         transition: all ease-in-out 500ms;
@@ -347,24 +350,24 @@ html {
         width: 100%;
         max-width: 260px;
     }
-    #competences {
+    #competencies {
         padding: 10px ;
         height: auto;
     }
-    #competences .about {
+    #competencies .about {
         flex-direction: column;
        height: fit-content;
     }
-    #competences .left , #competences .right {
+    #competencies .left , #competencies .right {
         width: 100%;
     }
-    #competences .left {
+    #competencies .left {
         height: fit-content;
     }
-    #competences .left img {
+    #competencies .left img {
         width: 50%;
     }
-    #competences .right {
+    #competencies .right {
         text-align: center;
         padding: 20px;
     }
