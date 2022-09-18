@@ -28,15 +28,29 @@ h3{
     padding: 50px;    
 }
 
+
+
+
+/* Keyframes pour le background */
+@keyframes change-background {
+    0% {
+      background: blue;
+    }
+    50% {
+      background: orange;
+    }
+    100% {
+      background: green;
+    }
+  }
+
+
+
 p{ 
     font-family: arial black;
     color: white;
     font-size: 20px;
 }
-
-
-/** CSS NAVBAR**/
-
 
 
 /** CSS POUR LES DIVS (ET NON PAS LES DIVISIONS HAHAHAHAHAHAHAHAHA) ahem **/
@@ -71,9 +85,7 @@ p{
     background-attachment: fixed;
 }
 
-.logos{
-    display: inline-flex;
-}
+
 
 /** Box4 = Partie Connect with me **/
 #box4{
