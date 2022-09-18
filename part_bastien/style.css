@@ -1,17 +1,13 @@
 * {
-    box-sizing: border-box;
-    background-color: rgb(255, 149, 140);
+    box-sizing: border-box; 
 }
 html {
-    font-family: sans-serif;
     scroll-snap-type: mandatory;
-    scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y mandatory;
+    background-color: rgb(255, 149, 140);
 }
 section {
     border-bottom: 1px solid rgb(255, 4, 4);
-    padding: 1rem;
-    height: 100vh;
     scroll-snap-align: start;
     text-align: center;
     position: relative;
@@ -19,11 +15,7 @@ section {
 h1 {
     
     top: 50%;
-    transform: translateY(-50%);
     text-align: center;
-    color: rgb(21, 213, 79);
-    width: 100%;
-    left: 0;
     font-size: calc(1rem + 3vw);
 }
 
@@ -32,6 +24,9 @@ img {
   height: 35%;
   
 }
+
+
+
 .part1{
     background-color: rgb(255, 149, 140);
 
@@ -44,10 +39,18 @@ img {
 
 .part2{
  background-color: rgb(255, 149, 140);
- }
+ margin: 10%; 
+}
+.imgp2
+{
 
+text-align: center;
+width: 30%;
+  height: 40%;
+}
  .part3{
     background-color: rgb(255, 149, 140);
+    padding:3px;
 }
 
 
@@ -112,3 +115,134 @@ img {
   color:#000;
   border-top: 3px solid #000;
 }
+
+
+.p-git{
+  margin-left: auto;
+    margin-right: auto;
+    width: 70%
+}
+
+
+
+/* part3 */
+
+.img-comp{
+  margin-left: auto;
+    margin-right: auto;
+    width: 30%
+    
+}
+
+/* Nav Bar */
+
+
+nav {
+  
+  background: rgb(20, 20, 20);
+ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: static;
+  top: 0;
+}
+
+.logo h2 {
+  text-decoration: overline;
+  font-style: italic;
+  color: rgb(0, 206, 206);
+  cursor: pointer;
+}
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+}
+.overview,.account {
+  display: flex;
+}
+
+.nav-items h3 {
+  display: none;
+}
+nav li {
+  list-style: none;
+  margin: 0 0.5rem;
+}
+nav a {
+  text-decoration: none;
+  color: rgb(220, 220, 220);
+}
+
+nav a::after {
+  content: "";
+  display: block;
+  height: 3px;
+  background: #a0ebfd;
+  width: 0%;
+  transition: all ease-in-out 300ms;
+}
+nav a:hover::after {
+  width: 100%;
+}
+#check,
+.menu {
+  display: none;
+}
+
+@media (max-width: 750px) {
+  .nav-items {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: rgb(20, 20, 20);
+    padding: 2rem;
+    right: -250px;
+    transition: all ease-in-out 500ms;
+    z-index: 10;
+  }
+  .overview,
+  .account {
+    flex-direction: column;
+    width: auto;
+  }
+  .overview {
+    margin: 0;
+  }
+  .nav-items h3 {
+    display: inline-block;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-bottom: 1rem;
+  }
+  nav svg {
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: top;
+  }
+  nav li {
+    margin: 1rem 0;
+  }
+  nav a {
+    display: inline-block;
+  }
+  nav a:hover {
+    margin-left: 2px;
+    transition: all ease-in-out 300ms;
+  }
+  .menu {
+    display: inline-block;
+    position: fixed;
+    right: 2.5rem;
+    z-index: 99;
+  }
+  #check:checked ~ .nav-items {
+    right: 0;
+  }
+}
+
